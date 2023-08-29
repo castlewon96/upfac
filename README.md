@@ -109,3 +109,9 @@ IB_MOBILE_WEB_RESOURCE_PUBLISHING
 <meta name="og:image" content="이미지 경로 800*420 사이즈정도" />
 
 ---
+
+## 7. 퍼블 배포 url
+
+- url : https://castlewon96.github.io/upfac/
+
+---

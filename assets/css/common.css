@@ -2,6 +2,14 @@
 .hide {display: none;}
 /* 공통 끝 */
 
+/* 
+    공통 사항
+    1.버튼
+    2.탭
+    3.레이어팝업
+    4.
+*/
+
 /* 버튼 */
 [class*="btn_full"] {
     display: block;

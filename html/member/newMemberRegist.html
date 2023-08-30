@@ -3,16 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>정보입력</title>
+    <title>회원가입</title>
     <link rel="stylesheet" href="../../assets/css/reset.css">
     <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/login.css">
     <link rel="stylesheet" href="../../assets/css/responsive.css">
 </head>
 <body>
-    
+    <div id="wrap" class="loginLanding">
+        <div class="login_wrap">
+            <div class="login_forms">
+                <div class="login_form signup">
+                    <div class="login_form-content">
+                        <div class="login_header">회원가입</div>
+                        <form action="#">
+                            <div class="field input-field">
+                                <label for="email"><em>아이디(Email)</em></label>
+                                <input type="email" placeholder="example@example.com" class="input" id="email">
+                            </div>
+                            <div class="field button-field mt-10">
+                                <button class="loginbt_type03">인증하기</button>
+                            </div>
+                            <div class="field input-field">
+                                <label for="txtPassword1"><em>비밀번호</em></label>
+                                <span class="tip">영문 대소문자, 숫자, 특수문자 중 2가지 이상 조합(10~16자)</span>
+                                <input type="password" placeholder="비밀번호 입력" class="input" name="txtPassword1" id="txtPassword1" maxlength="20" />
+                            </div>
+                            <div class="field input-field field_pwconfirm">
+                                <label for="txtPassword2"><em>비밀번호 확인</em></label>
+                                <input type="password" placeholder="비밀번호 확인" class="input" name="txtPassword2" id="txtPassword2" maxlength="20" />
+                            </div>
+                        </form>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>   
     <script src="../../assets//js/jquery.js"></script>
     <script src="../../assets//js/swiper-bundle.min.js"></script>
     <script src="../../assets/js/custom.js"></script>
+    
+    <script>        
+        $(document).ready(function(){
+          
+        })
+    </script>
+
 </body>
 </html>

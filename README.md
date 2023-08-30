@@ -98,11 +98,14 @@ IB_MOBILE_WEB_RESOURCE_PUBLISHING
 ## 6. title 형식 및 seo 작업
 
 <title></title>
+
 ```c
 <meta name="description" content="상세설명" />
 <meta name="keywords" content="3D, 건축, 디자인, 파일" />
 ```
+
 - og
+
 ```c
 <meta name="og:site_name" content="웹사이트 이름" />
 <meta name="og:title" content="웹페이지 제목" />

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
     <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/common.css">
     <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/login.css">
@@ -30,16 +31,16 @@
                             </div>
                             <div class="error_msg">비밀번호가 일치하지 않습니다</div>            
 
-                            <div class="field button-field auto_login_wrap mt-10">                                
+                            <div class="field button-field auto_login_wrap mt-10 dragunable">     
+                                <input type="checkbox" name="auto_login_main" id="auto_login_main" />                           
                                 <label for="auto_login_main" class="mb-0"> <span>아이디 저장</span>
-                                </label>
-                                <input type="checkbox" name="auto_login_main" id="auto_login_main" />
+                                </label>                                
                             </div>
             
-                            <div class="field button-field  mt-10">
+                            <div class="field button-field mt-10">
                                 <button class="loginbt_type01">로그인</button>
                             </div>
-                            <div class="field button-field signupfield">
+                            <div class="field button-field mt-10 signupfield">
                                 <button class="loginbt_type02">회원가입</button>
                             </div>
                         </form>

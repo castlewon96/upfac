@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
     <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/common.css">
     <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/login.css">
@@ -34,8 +35,49 @@
                                 <label for="txtPassword2"><em>비밀번호 확인</em></label>
                                 <input type="password" placeholder="비밀번호 확인" class="input" name="txtPassword2" id="txtPassword2" maxlength="20" />
                             </div>
+                            <div class="field input-field">
+                                <label for="nickname"><em>닉네임</em></label>
+                                <input type="password" placeholder="UPFAC에서 사용하실 닉네임" class="input" name="nickname" id="nickname" maxlength="20" />
+                            </div>
+
+                            <div class="field input-field field_agree">
+                                <div class="checkbox_group">
+                                    <input type="checkbox" id="check_all" >
+                                    <label for="check_all" class="check_all"><span>모든 약관을 확인하고 전체 동의합니다.</span></label>
+                                    
+                                    <input type="checkbox" id="check_1" class="normal" >
+                                    <label for="check_1"><span>이용약관 및 개인정보처리방침 동의 (필수)</span></label>
+                                    
+                                    <input type="checkbox" id="check_2" class="normal" >
+                                    <label for="check_2"><span>할인소식 및 프로모션 알림 동의 (선택)</span></label>
+                                    
+                                    <input type="checkbox" id="check_3" class="normal" >
+                                    <label for="check_3"><span>개인정보 수집 및 이용동의 (선택)</span></label>
+                                    
+                                  </div>
+                            </div>  
                         </form>
-                    </div>     
+                    </div>  
+
+                    <div class="line"></div>
+            
+                    <div class="media-options">
+                        <a href="#" class="field facebook">
+                            <img src="../../assets/images/login/sns_naver.png" alt="sns 네이버 로그인" />
+                        </a>
+                        <a href="#" class="field facebook">
+                            <img src="../../assets/images/login/sns_kakao.png" alt="sns 카카오 로그인" />
+                        </a>
+                        <a href="#" class="field facebook">
+                            <img src="../../assets/images/login/sns_google.png" alt="sns 구글 로그인" />
+                        </a>
+                        <a href="#" class="field facebook">
+                            <img src="../../assets/images/login/sns_facebook.png" alt="sns 페이스북 로그인" />
+                        </a>
+                        <a href="#" class="field facebook">
+                            <img src="../../assets/images/login/sns_tweeter.png" alt="sns 트위터 로그인" />
+                        </a>
+                    </div>   
                 </div>
             </div>
         </div>
@@ -46,7 +88,21 @@
     
     <script>        
         $(document).ready(function(){
-          
+            // 체크박스 전체 선택
+            $(".checkbox_group").on("click", "#check_all", function () {
+                $(this).parents(".checkbox_group").find('input').prop("checked", $(this).is(":checked"));
+            });
+
+            // 체크박스 개별 선택
+            $(".checkbox_group").on("click", ".normal", function() {
+                var is_checked = true;
+
+                $(".checkbox_group .normal").each(function(){
+                    is_checked = is_checked && $(this).is(":checked");
+                });
+
+                $("#check_all").prop("checked", is_checked);
+            });
         })
     </script>
 

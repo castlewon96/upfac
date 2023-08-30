@@ -56,12 +56,13 @@
 form{
     margin-top: 30px;
 }
-.login_form .field{
+.login_form .field {
     position: relative;
     width: 100%;
     margin-top: 25px;
     border-radius: 6px;
 }
+
 .login_form .field .tip {
     font-size:12px;
     color:#878787;    
@@ -133,7 +134,8 @@ form{
     /* justify-content: left; */
     /* line-height: 1.3; */
     cursor: pointer;
-    display:inline-flex;
+    display:inline-flex;    
+    align-items: center;
 }
 
 .field.auto_login_wrap span {
@@ -158,8 +160,8 @@ form{
     -moz-background-size: auto;
     background-size: auto;
     content: '';
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
     -webkit-box-flex: 0;
     -webkit-flex: none;
     -moz-box-flex: 0;
@@ -188,7 +190,7 @@ form{
     cursor: pointer;
 }
 .field .loginbt_type02:hover{
-    background-color: #016dcb;
+    
 }
 .loginbt_type01, .loginbt_type02 {padding:20px 0;}
 
@@ -268,6 +270,47 @@ form{
     margin-top: 40px;
     font-weight: bold;
     font-size: 16px;
+}
+
+.field_agree {
+    display: flex;
+    flex-direction: column;
+}
+.field_agree label {
+    align-items: center;
+}
+
+.field_agree label span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    margin-left: 8px;
+    color: #2B2B2B;
+}
+.field_agree label.check_all span {font-size:18px;font-weight:bold;}
+
+.field_agree label:before {
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-image: url('../images/common/check_off.png');
+    background-position: center center;
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto;
+    background-size: auto;
+    content: '';
+    width: 28px;
+    height: 28px;
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -moz-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+}
+
+.field_agree input {display: none;}
+
+.field_agree input:checked+label:before {
+    background-image: url('../images/common/check_on.png');
 }
 
 @media(max-width: 992px) {

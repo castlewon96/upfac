@@ -5,10 +5,238 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="text/javascript" src="../../assets/js/versions/jquery-1.9.1.min.js"></script>
+    <script>
+        $(document).ready(function(e) {
+            $(".guide .btn-view-code").click(function(){
+                var myText = $(this).prev("section").html();
+                var _source = $(this).parent(".item").next();
+                var _view = $(this).parent(".item");
+                _source.children("xmp").html(myText);
+            });
+        });        
+    </script>
+    <!-- 기본 스타일 -->
+    <style>        
+        * {
+            font-family: Verdana, Geneva, sans-serif, "Malgun Gothic";
+        }
+        .guide {
+            border-top: 2px solid #32373c;
+            padding:20px;
+        }
+        .guide > h1 {
+            font-size: 16px;
+            color: #000;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .guide > article {
+            border: 1px solid #ddd;
+            margin-bottom: 30px;
+            background: #efefef;
+        }
+        .guide > article:after {
+            content: "";
+            display: block;
+            clear: both;
+            height: 0;
+        }
+        .guide > article > .view {
+            padding: 15px;
+            box-sizing: border-box;
+            background: #fff;
+        }
+        .guide > article > .view > .item > h2 {
+            font-size: 13px;
+            color: #333;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+        .guide > article > .view > .item > h2:first-child {
+            margin-top: 0;
+        }
+        .guide > article > .view > .item > section {
+            padding: 10px;
+            border: 1px solid #dedede;
+            margin-bottom: 6px;
+        }
+        .guide > article > .view > .source {
+            margin: 15px 0 30px;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color:#ddd;
+        }
+        .guide > article > .view > .source > xmp {
+            font-size: 12px;
+            color: #32373c;
+            word-break: break-all;
+            white-space: pre-wrap;
+        }
+        .guide > article.full > .view, .guide > article.full > .source {
+            float: none;
+            width: 100%;
+        }
+        .guide + .top{ position: fixed; right:10px; bottom:10px; z-index:100; background:#333; width:50px; height:50px; text-align:center; line-height:50px; color:#fff; border-radius:50%;}
+    </style>
+    <!-- //기본 스타일 -->
+    
+    <!-- 요소 스타일 -->
+    <style>
+        /* 리스트타입01 */
+        .container {
+            max-width: 1420px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .title h2 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .product_area {
+            margin-top: 80px;
+        }
+        .product_area .cont {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product_area .cont li {
+            width: calc(100% / 4 - 11.5px);
+            margin-right: 15px;
+            margin-top: 15px;
+        }
+        .product_area .cont li a {
+            display: block;
+            border: 1px solid #000;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .product_area .cont li:nth-of-type(4n) {
+            margin-right: 0;
+        }
+        .product_area .cont .is_img {
+            position: relative;
+            width: 100%;
+            background: #00000065;
+            min-height: 200px;
+        }
+        .product_area .cont li.sale .is_img::before {
+            content: "Sale";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 12px;
+            color: #fff;
+            padding: 3px 10px;
+            background: #5157ff;
+            border-radius: 8px;
+        }
+        .product_area .cont li.free .is_img::before {
+            content: "free";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 12px;
+            color: #fff;
+            padding: 3px 10px;
+            background: #3adea6;
+            border-radius: 8px;
+        }
+        .product_area .cont .text {
+            padding: 10px;
+        }
+        .product_area .cont .text_top {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product_area .cont .text_top h3 {
+            font-size: 12px;
+        }
+        .product_area .cont .text_top span {
+            font-size: 12px;
+        }
+        .product_area .cont .text p {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .product_area .more {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .product_area .more a{
+            display: inline-block;
+            font-size: 12px;
+            padding: 10px 50px;
+            border: 1px solid #000;
+            border-radius: 30px;
+        }
+        /* //리스트타입01 */
+    </style>
+    <!-- //요소 스타일 -->
 </head>
 <body>
     <div>
-        스타일
+        <div class="guide">
+            <!-- group -->
+            <h1>타이틀</h1>
+            <article>
+                <div class="view">
+                    <!-- item -->
+                    <div class="item">
+                        <h2>type1</h2>
+                        <section>
+                            <!-- 타이틀 타입01 -->
+                            <div class="title"><h2>UPFAC 업데이트</h2></div>         
+                            <!-- 타이틀 타입01 -->                            
+                        </section>
+                        <button type="button" class="btn-view-code">view code</button>
+                    </div>
+                    <!-- //item -->  
+                    <div class="source">
+                        <xmp></xmp>
+                    </div>
+                </div>
+                
+            </article>
+            <!-- //group -->
+        
+            <!-- group -->
+            <h1>리스트 기본 스타일</h1>
+            <article>
+                <div class="view">
+                    <!-- item -->
+                    <div class="item">
+                        <h2></h2>
+                        <section>
+                            <!-- 리스트타입01 -->
+                            <section class="product_area">
+                                <div class="container">
+                                    <div class="title"><h2>UPFAC 업데이트</h2></div>
+                                    <ul class="cont">
+                                        <li><a href=""><div class="is_img"></div><div class="text"><div class="text_top"><h3>유저이름</h3><span>1 1</span></div><p>13,000원</p></div></a></li>
+                                        <li><a href=""><div class="is_img"></div><div class="text"><div class="text_top"><h3>유저이름</h3><span>1 1</span></div><p>13,000원</p></div></a></li>
+                                        <li><a href=""><div class="is_img"></div><div class="text"><div class="text_top"><h3>유저이름</h3><span>1 1</span></div><p>13,000원</p></div></a></li>
+                                        <li><a href=""><div class="is_img"></div><div class="text"><div class="text_top"><h3>유저이름</h3><span>1 1</span></div><p>13,000원</p></div></a></li>
+                                        <li><a href=""><div class="is_img"></div><div class="text"><div class="text_top"><h3>유저이름</h3><span>1 1</span></div><p>13,000원</p></div></a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <!-- 리스트타입02 -->
+                        </section>
+                        <button type="button" class="btn-view-code">view code</button>
+                    </div>
+                    <!-- //item -->    
+                    <div class="source">
+                        <xmp></xmp>
+                    </div>                
+                </div>
+            </article>
+            <!-- //group -->      
+        </div>
     </div>
 </body>
 </html>

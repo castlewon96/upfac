@@ -63,8 +63,15 @@ form{
 .login_form .field{
     position: relative;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 25px;
     border-radius: 6px;
+}
+.login_form .field.signupfield {
+    margin-top: 10px;
+}
+.login_form .field label {
+    display: flex;
+    margin-bottom:13px;
 }
 .field input,
 .field button{
@@ -94,15 +101,27 @@ form{
     cursor: pointer;
     padding: 5px;
 }
-.field button{
+.field .loginbt_type01{
     color: #fff;
-    background-color: #0171d3;
+    background-color: #1C1B1B;
     transition: all 0.3s ease;
     cursor: pointer;
 }
-.field button:hover{
+.field .loginbt_type01:hover{
     background-color: #016dcb;
 }
+.field .loginbt_type02{
+    background-color: transparent;
+    border:1px solid #1C1B1B;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field .loginbt_type02:hover{
+    background-color: #016dcb;
+}
+
+.loginbt_type01, .loginbt_type02 {padding:20px 0;}
+
 .login_form-link{
     text-align: center;
     margin-top: 10px;
@@ -181,10 +200,10 @@ a.google span{
     color: #232836;
 }
 
-.loginbt_type01 {padding:15px 0;}
+
 
 .find_pw {display: flex; justify-content: space-between;}
-
+.find_pw > a {font-size:12px;}
 
 
 @media(max-width: 992px) {

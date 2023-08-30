@@ -92,10 +92,23 @@
             margin: 0 auto;
             padding: 0 15px;
         }
-        .title h2 {
+        .titleType01 h2 {
             text-align: center;
             font-size: 24px;
             font-weight: bold;
+        }
+        .titleType02 h2 {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 21px;
+        }
+        .titleType02 h2 span {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 14px;
+            color: #ababab;
         }
         .product_area {
             margin-top: 80px;
@@ -187,10 +200,25 @@
                 <div class="view">
                     <!-- item -->
                     <div class="item">
-                        <h2>type1</h2>
+                        <h2>Type1</h2>
                         <section>
                             <!-- 타이틀 타입01 -->
-                            <div class="title"><h2>UPFAC 업데이트</h2></div>         
+                            <div class="titleType01"><h2>UPFAC 업데이트</h2></div>         
+                            <!-- 타이틀 타입01 -->                            
+                        </section>
+                        <button type="button" class="btn-view-code">view code</button>
+                    </div>
+                    <!-- //item -->  
+                    <div class="source">
+                        <xmp></xmp>
+                    </div>
+
+                    <!-- item -->
+                    <div class="item">
+                        <h2>Type2</h2>
+                        <section>
+                            <!-- 타이틀 타입01 -->
+                            <div class="titleType02"><h2>그레이하운드 캐릭터 3D 이미지 <span>2시간 전 내용수정</span></h2></div>         
                             <!-- 타이틀 타입01 -->                            
                         </section>
                         <button type="button" class="btn-view-code">view code</button>

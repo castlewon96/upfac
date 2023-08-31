@@ -1,6 +1,6 @@
-#wrap.loginPop { display: flex; width: 100%; height: 100%; position: absolute;  top: 0; z-index: 100; background-repeat: no-repeat; background-position: top center; background-size: cover; } 
-#wrap.loginPop::before { content: ""; z-index: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); } 
-#wrap.loginPop .login_wrap { position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; z-index: 1; max-width: 500px; height: 70vh; max-height: 700px; padding: 30px 40px; background: #fff; border-radius: 10px; box-sizing: border-box; align-items: center; width: 100%; justify-content: center; overflow-y: auto; } 
+#wrap.login_area { display: flex; width: 100%; height: 100%; position: absolute;  top: 0; z-index: 100; background-repeat: no-repeat; background-position: top center; background-size: cover; } 
+#wrap.login_area::before { content: ""; z-index: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); } 
+#wrap.login_area .login_wrap { position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; z-index: 1; max-width: 500px; height: 70vh; max-height: 700px; padding: 30px 40px; background: #fff; border-radius: 10px; box-sizing: border-box; align-items: center; width: 100%; justify-content: center; overflow-y: auto; } 
 form { margin-top: 30px; } 
 .login_forms { width: 100%; } 
 .login_form { position: relative; max-width: 430px; width: 100%; border-radius: 6px; background: #FFF; } 
@@ -67,9 +67,9 @@ form { margin-top: 30px; }
 .field_agree input:checked+label:before { background-image: url('../images/common/check_on.png'); } 
 
 @media(max-width: 992px){
- #wrap.loginPop .login_wrap { height: 80vh; } 
+ #wrap.login_area .login_wrap { height: 80vh; } 
  }
 @media(max-width: 767px){
- #wrap.loginPop .login_wrap { width:90%; } 
+ #wrap.login_area .login_wrap { width:90%; } 
  }
 @media(max-width: 480px) { }

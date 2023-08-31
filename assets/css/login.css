@@ -1,4 +1,4 @@
-#wrap.loginPop { display: flex; width: 100%; height: 100%; position: fixed; background-repeat: no-repeat; background-position: top center; background-size: cover; } 
+#wrap.loginPop { display: flex; width: 100%; height: 100%; position: absolute;  top: 0; z-index: 100; background-repeat: no-repeat; background-position: top center; background-size: cover; } 
 #wrap.loginPop::before { content: ""; z-index: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); } 
 #wrap.loginPop .login_wrap { position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; z-index: 1; max-width: 500px; height: 70vh; max-height: 700px; padding: 30px 40px; background: #fff; border-radius: 10px; box-sizing: border-box; align-items: center; width: 100%; justify-content: center; overflow-y: auto; } 
 form { margin-top: 30px; } 

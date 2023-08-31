@@ -124,8 +124,8 @@ IB_MOBILE_WEB_RESOURCE_PUBLISHING
 ## 8. css구조
 
 ㅡ 공통 css
-   ㄴ common.css (공통 버튼, 컬러, 폰트 등)
-   ㄴ style.css (공통 레이아웃 - 게시판, 리스트, 탭, 슬라이드 등)
+   ㄴ common.css (공통 미시 요소 - 버튼, 컬러, 폰트 등)
+   ㄴ style.css (공통 거시 레이아웃 - 게시판, 리스트, 탭, 슬라이드 등)
    ㄴ reset.css
    ㄴ font.css
    ㄴ responsive.css (공통 반응형)
@@ -139,7 +139,7 @@ IB_MOBILE_WEB_RESOURCE_PUBLISHING
 
    ㅡ members
       ㄴ members.css (자체 반응형)
-      
+
    ㅡ mypage
       ㄴ mypage.css (자체 반응형)
 

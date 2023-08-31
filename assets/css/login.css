@@ -280,6 +280,10 @@ form{
     align-items: center;
 }
 
+.field_agree label.check_all {
+    margin-bottom:20px;
+}
+
 .field_agree label span {
     display: inline-block;
     vertical-align: middle;

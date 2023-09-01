@@ -37,6 +37,7 @@ a {
 /* 공통 */
 
 /* 탭 */
+/****탭 스타일 01****/
 .tab_type01 {
     display: flex;
     max-width: 1800px;
@@ -79,7 +80,7 @@ a {
 /* 탭 끝 */
 
 /* 팝업 */
-/*-- 상품 상세 팝업 ======================================================================================================================== --*/
+/****상품 상세 팝업****/
 #mask {
     position: fixed;
     left: 0;
@@ -136,6 +137,34 @@ a {
 .layerpop_area .content {
     width: 100%;    
     color: #828282; 
+}
+
+/****일반 공통 팝업****/
+.layer-popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 100;
+}
+
+.layer-popup.show {
+	display: block;
+}
+
+.modal-dialog {
+	width: 300px;
+	margin: 40px auto;
+	background-color: #fff;
+}
+
+.modal-content {
+	padding:10px 15px;
+	text-align: center;
+	line-height: 100px;
 }
 
 /**구매뷰**/

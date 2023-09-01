@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style 공통 정의</title>
     <script type="text/javascript" src="../../assets/js/versions/jquery-1.9.1.min.js"></script>
+    
     <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/common.css">
+    <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/login.css">
     <link rel="stylesheet" href="../../assets/css/responsive.css">
+
     <script>
         $(document).ready(function(e) {
             $(".guide .btn-view-code").click(function(){
@@ -112,83 +117,6 @@
             font-size: 14px;
             color: #ababab;
         }
-        .product_area {
-            margin-top: 80px;
-        }
-        .product_area .cont {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .product_area .cont li {
-            width: calc(100% / 4 - 11.5px);
-            margin-right: 15px;
-            margin-top: 15px;
-        }
-        .product_area .cont li a {
-            display: block;
-            border: 1px solid #000;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .product_area .cont li:nth-of-type(4n) {
-            margin-right: 0;
-        }
-        .product_area .cont .is_img {
-            position: relative;
-            width: 100%;
-            background: #00000065;
-            min-height: 200px;
-        }
-        .product_area .cont li.sale .is_img::before {
-            content: "Sale";
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            font-size: 12px;
-            color: #fff;
-            padding: 3px 10px;
-            background: #5157ff;
-            border-radius: 8px;
-        }
-        .product_area .cont li.free .is_img::before {
-            content: "free";
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            font-size: 12px;
-            color: #fff;
-            padding: 3px 10px;
-            background: #3adea6;
-            border-radius: 8px;
-        }
-        .product_area .cont .text {
-            padding: 10px;
-        }
-        .product_area .cont .text_top {
-            display: flex;
-            justify-content: space-between;
-        }
-        .product_area .cont .text_top h3 {
-            font-size: 12px;
-        }
-        .product_area .cont .text_top span {
-            font-size: 12px;
-        }
-        .product_area .cont .text p {
-            font-size: 14px;
-            font-weight: bold;
-        }
-        .product_area .more {
-            text-align: center;
-            margin-top: 15px;
-        }
-        .product_area .more a{
-            display: inline-block;
-            font-size: 12px;
-            padding: 10px 50px;
-            border: 1px solid #000;
-            border-radius: 30px;
-        }
         /* //리스트타입01 */
     </style>
     <!-- //요소 스타일 -->
@@ -220,7 +148,11 @@
                         <h2>Type2</h2>
                         <section>
                             <!-- 타이틀 타입01 -->
-                            <div class="titleType02"><h2>그레이하운드 캐릭터 3D 이미지 <span>2시간 전 내용수정</span></h2></div>         
+                            <div class="title">
+                                <h3>그레이하운드 캐릭터 3D 이미지 
+                                    <span>2시간 전 내용수정</span>
+                                </h3>
+                            </div>         
                             <!-- 타이틀 타입01 -->                            
                         </section>
                         <button type="button" class="btn-view-code">view code</button>
@@ -245,13 +177,95 @@
                             <!-- 리스트타입01 -->
                             <section class="product_area">
                                 <div class="container">
-                                    <div class="title"><h2>UPFAC 업데이트</h2></div>
+                                    <div class="title">
+                                        <h2>UPFAC 업데이트</h2>
+                                    </div>
                                     <ul class="cont">
-                                        <li><a href=""><div class="is_img"></div><div class="text"><div class="text_top"><h3>유저이름</h3><span>1 1</span></div><p>13,000원</p></div></a></li>
-                                        <li><a href=""><div class="is_img"></div><div class="text"><div class="text_top"><h3>유저이름</h3><span>1 1</span></div><p>13,000원</p></div></a></li>
-                                        <li><a href=""><div class="is_img"></div><div class="text"><div class="text_top"><h3>유저이름</h3><span>1 1</span></div><p>13,000원</p></div></a></li>
-                                        <li><a href=""><div class="is_img"></div><div class="text"><div class="text_top"><h3>유저이름</h3><span>1 1</span></div><p>13,000원</p></div></a></li>
-                                        <li><a href=""><div class="is_img"></div><div class="text"><div class="text_top"><h3>유저이름</h3><span>1 1</span></div><p>13,000원</p></div></a></li>
+                                        <li class="item">
+                                            <a href="javascript:;">
+                                                <div class="is_img">
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="is_text">
+                                                    <div class="is_text_top">
+                                                        <h3 class="user_name">유저이름</h3>
+                                                        <div class="info">
+                                                            <span class="info_view">1.1K</span>
+                                                            <span class="info_favorites">123</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="price">13,000원</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="javascript:;">
+                                                <div class="is_img">
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="is_text">
+                                                    <div class="is_text_top">
+                                                        <h3 class="user_name">유저이름</h3>
+                                                        <div class="info">
+                                                            <span class="info_view">1.1K</span>
+                                                            <span class="info_favorites">123</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="price">13,000원</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="javascript:;">
+                                                <div class="is_img">
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="is_text">
+                                                    <div class="is_text_top">
+                                                        <h3 class="user_name">유저이름</h3>
+                                                        <div class="info">
+                                                            <span class="info_view">1.1K</span>
+                                                            <span class="info_favorites">123</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="price">13,000원</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="javascript:;">
+                                                <div class="is_img">
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="is_text">
+                                                    <div class="is_text_top">
+                                                        <h3 class="user_name">유저이름</h3>
+                                                        <div class="info">
+                                                            <span class="info_view">1.1K</span>
+                                                            <span class="info_favorites">123</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="price">13,000원</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="javascript:;">
+                                                <div class="is_img">
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="is_text">
+                                                    <div class="is_text_top">
+                                                        <h3 class="user_name">유저이름</h3>
+                                                        <div class="info">
+                                                            <span class="info_view">1.1K</span>
+                                                            <span class="info_favorites">123</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="price">13,000원</p>
+                                                </div>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </section>

@@ -188,3 +188,59 @@ a {
     margin-top: 80px;
     background: #000;
 }
+
+
+/* 물품 팝업 */
+.pop_product {
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000063;
+}
+.pop_product .btn_close {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    color: #fff;
+}
+.pop_product .cont {
+    position: relative;
+    width: 90%;
+    height: 90vh;
+    padding: 30px;
+    background: #fff;
+}
+.pop_product .cont .item {
+    display: flex;
+}
+.pop_product .cont .item_visual {
+    width: 75%;
+    height: 600px;
+    background: #000;
+}
+.pop_product .cont .item_info {
+    width: 25%;
+    margin-left: 15px;
+}
+.pop_product .cont .item_info_user {
+    display: flex;
+    align-items: center;
+}
+.pop_product .cont .item_info_user .user_name {
+    font-weight: bold;
+    color: #3adea6;
+}
+.pop_product .cont .item_info_user .btn_follow {
+    font-size: 14px;
+    padding: 1px 5px;
+    color: #5157ff;
+    margin-left: 15px;
+    border: 1px solid #5157ff;
+}
+/* 물품 팝업 */

@@ -1,5 +1,12 @@
 /* 공통 */
 .hide {display: none;}
+/* 드래그 금지 */
+.dragunable {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
 /* 공통 끝 */
 
 /* 

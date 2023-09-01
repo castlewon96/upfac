@@ -5,125 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
     <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/common.css">
     <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/login.css">
     <link rel="stylesheet" href="../../assets/css/responsive.css">
 </head>
 <body>
-    <div id="wrap" class="loginLanding">
-        <div class="login_wrap">
-            <div class="login_forms">
-                <div class="login_form login">
-                    <div class="login_form-content">
-                        <div class="login_header">LOGIN</div>
-                        <form action="#">
-                            <div class="field input-field">
-                                <label for="email">아이디(email)</label>
-                                <input type="email" placeholder="Email" class="input" id="email">
+    <!-- 임시 헤더 -->
+    <header class="header">
+    </header>
+    <!-- //임시헤더 -->
+    
+    <main>
+        <div id="wrap" class="login_area">
+            <div class="login_wrap">
+                <div class="login_forms">
+                    <div class="login_form login">
+                        <div class="login_form-content">
+                            <div class="title">
+                                <h2>LOGIN</h2>
                             </div>
-            
-                            <div class="field input-field">
-                                <label for="password" class="find_pw">비밀번호 <a href="">비밀번호를 잊으셨나요?</a></label>
-                                <input type="password" placeholder="비밀번호 입력" class="password" id="password">
-                                <i class='bx bx-hide eye-icon'></i>
-                            </div>
-            
-                            <!-- <div class="login_form-link">
-                                <a href="#" class="forgot-pass">Forgot password?</a>
-                            </div> -->
-            
-                            <div class="field button-field">
-                                <button class="loginbt_type01">Login</button>
-                            </div>
-                        </form>
-            
-                        <div class="login_form-link">
-                            <!-- <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span> -->
-                            <button class="loginbt_type01">회원가입</button>
+                            <form action="#">
+                                <div class="field input-field">
+                                    <label for="email"><em>아이디(Email)</em></label>
+                                    <input type="email" placeholder="example@example.com" class="input" id="email">
+                                </div>
+                
+                                <div class="field input-field">
+                                    <label for="password" class="find_pw"><em>비밀번호</em> <a href="">비밀번호를 잊으셨나요?</a></label>
+                                    <input type="password" placeholder="비밀번호 입력" class="password error_focus" id="password" />
+                                    <i class='bx bx-hide eye-icon'></i>
+                                </div>
+                                <div class="error_msg">비밀번호가 일치하지 않습니다</div>            
+    
+                                <div class="field button-field auto_login_wrap mt-10 dragunable">     
+                                    <input type="checkbox" name="auto_login_main" id="auto_login_main" />                           
+                                    <label for="auto_login_main" class="mb-0"> <span>아이디 저장</span>
+                                    </label>                                
+                                </div>
+                
+                                <div class="field button-field mt-10">
+                                    <button class="loginbt_type01">로그인</button>
+                                </div>
+                                <div class="field button-field mt-10 signupfield">
+                                    <button class="loginbt_type02">회원가입</button>
+                                </div>
+                            </form>
                         </div>
+                
+                        <div class="line"></div>
+                
+                        <div class="media-options">
+                            <a href="#" title="네이버 로그인" class="field facebook">
+                                <img src="../../assets/images/login/sns_naver.png" alt="sns 네이버 로그인" />
+                            </a>
+                            <a href="#" title="카카오 로그인"  class="field facebook">
+                                <img src="../../assets/images/login/sns_kakao.png" alt="sns 카카오 로그인" />
+                            </a>
+                            <a href="#" title="구글 로그인"  class="field facebook">
+                                <img src="../../assets/images/login/sns_google.png" alt="sns 구글 로그인" />
+                            </a>
+                            <a href="#" title="페이스북 로그인"  class="field facebook">
+                                <img src="../../assets/images/login/sns_facebook.png" alt="sns 페이스북 로그인" />
+                            </a>
+                            <a href="#" title="트위터 로그인"  class="field facebook">
+                                <img src="../../assets/images/login/sns_tweeter.png" alt="sns 트위터 로그인" />
+                            </a>
+                        </div>              
                     </div>
-            
-                    <div class="line"></div>
-            
-                    <div class="media-options">
-                        <a href="#" class="field facebook">
-                            <img src="../../assets/images/login/sns_naver.png" alt="" class="google-img">
-                        </a>
-                        <a href="#" class="field facebook">
-                            <img src="../../assets/images/login/sns_naver.png" alt="" class="google-img">
-                        </a>
-                        <a href="#" class="field facebook">
-                            <img src="../../assets/images/login/sns_naver.png" alt="" class="google-img">
-                        </a>
-                        <a href="#" class="field facebook">
-                            <img src="../../assets/images/login/sns_naver.png" alt="" class="google-img">
-                        </a>
-                        <a href="#" class="field facebook">
-                            <img src="../../assets/images/login/sns_naver.png" alt="" class="google-img">
-                        </a>
-                    </div>
-            
-                    <div class="media-options">
-                        <a href="#" class="field google">
-                            <img src="#" alt="" class="google-img">
-                            <span class="loginbt_type01">Login with Google</span>
-                        </a>
-                    </div>
-            
-                </div>
-            
-                <!-- Signup Form -->
-                <div class="login_form signup">
-                    <div class="login_form-content">
-                        <header>Signup</header>
-                        <form action="#">
-                            <div class="field input-field">
-                                <input type="email" placeholder="Email" class="input">
-                            </div>
-            
-                            <div class="field input-field">
-                                <input type="password" placeholder="Create password" class="password">
-                            </div>
-            
-                            <div class="field input-field">
-                                <input type="password" placeholder="Confirm password" class="password">
-                                <i class='bx bx-hide eye-icon'></i>
-                            </div>
-            
-                            <div class="field button-field">
-                                <button>Signup</button>
-                            </div>
-                        </form>
-            
-                        <div class="login_form-link">
-                            <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
-                        </div>
-                    </div>
-            
-                    <div class="line"></div>
-            
-                    <div class="media-options">
-                        <a href="#" class="field facebook">
-                            <i class='bx bxl-facebook facebook-icon'></i>
-                            <span>Login with Facebook</span>
-                        </a>
-                    </div>
-            
-                    <div class="media-options">
-                        <a href="#" class="field google">
-                            <img src="#" alt="" class="google-img">
-                            <span>Login with Google</span>
-                        </a>
-                    </div>
-            
                 </div>
             </div>
-        </div>
-    </div>    
-
-    <script src="../../assets//js/jquery.js"></script>
-    <script src="../../assets//js/swiper-bundle.min.js"></script>
+        </div>   
+    </main>
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/swiper-bundle.min.js"></script>
     <script src="../../assets/js/custom.js"></script>
+
+    <!-- 임시 공통 헤더, 푸터 불러오기 -->
+    <script src="../../assets/js/common.js"></script>
+    
+    <script>        
+        $(document).ready(function(){
+            var error = document.querySelector('.error_msg')
+            var errorFocus = document.querySelector('.error_focus')
+            if(error.innerHTML !== ''){
+                errorFocus.style.border = '1px solid #FF6E6E'
+            }
+        })
+    </script>
+
 </body>
 </html>

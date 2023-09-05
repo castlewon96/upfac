@@ -21,6 +21,12 @@ label {
     margin: 0 auto;
     padding: 0 15px;
 }
+.container_full {
+    max-width: 1858px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .title h2 {
     font-size: 26px;
     font-weight: bold;

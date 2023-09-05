@@ -102,3 +102,100 @@
 }
 
 /* 버튼 끝 */
+
+
+/* 탭 */
+
+.tab_type01 {
+    width: 100%;
+    overflow: hidden;
+}
+.tab_type01 > a {
+    float: left;
+    width: 50%;
+    height: 45px;
+    line-height: 45px;
+    background: #f3f5fa;
+    border: 1px solid #d7dbe3;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #a9afbd;
+    text-align: center;
+}
+.tab_type01 > a.on {
+    background: #fff;
+    border-bottom: 0;
+    color: #616781;
+}
+.tab_type01 > a:last-child {
+    border-left: 0;
+}
+.tab_type02 {
+    display: flex;
+    width: 100%;
+    height: 54px;
+}
+.tab_type02 li {
+    flex: 1;
+    background-color: #ecf2ff;
+    border: 1px solid #cfcbff;
+    font-size: 14px;
+    font-weight: 700;
+    color: #7e86a8;
+}
+.tab_type02 li:not(:last-child) {
+    border-right: 0;
+}
+.tab_type02 li.on {
+    background-color: #635bca;
+    border-color: #635bca;
+    color: #fff;
+}
+.tab_type02 li.on + li {
+    border-left: 0;
+}
+.tab_type02 li > a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.tab_type03 {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;    
+    padding: 0 40px;
+}
+.tab_type03 li {
+    width: 120px;
+    border-bottom: 1px solid transparent;
+    font-weight: 300;
+    text-align: center;
+    color: #7c7c7c;
+    display: flex;
+    justify-content: center;
+}
+.tab_type03 li.on {
+    border-bottom: 2px solid #3ADEA6;
+    font-weight:bold;
+}
+.tab_type03 li.on a {
+    color: #3ADEA6;
+}
+.tab_type03 li .btn {
+    display: block;
+    height: 100%;
+    padding-bottom: 10px;    
+    align-items: center;
+    display: flex;
+}
+.tab_box {
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    margin: 20px 0;
+    color: #666;    
+    padding: 0 40px;
+}
+/* 탭 끝 */

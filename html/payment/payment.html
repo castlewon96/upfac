@@ -5,437 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPFAC</title>
     <!-- 리셋 -->
-    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
     <!-- 스와이퍼 -->
-    <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!-- 스타일 -->
-    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- 반응형 -->
-    <link rel="stylesheet" href="../../assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 <body>
-    <!-- 최상단 네비 -->
-    <nav class="top_nav">
-        <ul class="top_nav_list">
-            <li><a href="">로그인</a></li>
-            <li><a href="">회원가입</a></li>
-            <li><a href="">고객센터</a></li>
-        </ul>
-    </nav>
-    <!-- 최상단 네비 끝 -->
-    
-    <!-- 헤더 -->
     <header class="header">
         <div class="header_container">
             <div class="header_top">
-                <h1 class="header_logo"><a href="javascript:;"><img src="../../assets/images/common/logo.svg" alt="로고" /></a></h1>
+                <h1 class="header_logo"><a href="#"><img src="assets/images/logo.jpg" alt="로고" /></a></h1>
                 <div class="header_search">
-                    <input type="text" />
-                    <button type="button" class="btn_search"></button>
+                    <input type="text">
                 </div>
                 <ul class="header_top_nav">
-                    <li>
-                        <a href="javascript:;">
-                            <div class="is_img">
-                                <img src="../../assets/images/common/header_ico01.svg" alt="물품등록" />
-                            </div>
-                            <p>물품등록</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <div class="is_img">
-                                <img src="../../assets/images/common/header_ico02.svg" alt="장바구니" />
-                            </div>
-                            <p>장바구니</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <div class="is_img">
-                                <img src="../../assets/images/common/header_ico03.svg" alt="마이페이지" />
-                            </div>
-                            <p>마이페이지</p>
-                        </a>
-                    </li>
+                    <li><a href="javascript:;"><img src="assets/images/ico1.jpg" alt=""><p>물품등록</p></a></li>
+                    <li><a href="javascript:;"><img src="assets/images/ico2.jpg" alt=""><p>장바구니</p></a></li>
+                    <li><a href="javascript:;"><img src="assets/images/ico3.jpg" alt=""><p>마이페이지</p></a></li>
                 </ul>
             </div>
-        </div>
-        <div class="header_nav">
-            <ul class="header_nav_list">
-                <li><a href="javascript:;">신규입점상품</a></li>
-                <li><a href="javascript:;">3D</a></li>
-                <li><a href="javascript:;">2D</a></li>
-                <li><a href="javascript:;">시각효과</a></li>
+            <ul class="header_nav">
+                <li><a href="">신규입점상품</a></li>
+                <li><a href="">이펙트</a></li>
+                <li><a href="">애니메이션</a></li>
+                <li><a href="">시각효과</a></li>
             </ul>
         </div>
     </header>
-    <!-- 헤더 끝 -->
-
     <main class="all_wrap">
-        <!-- 결제하기 -->
-        <section class="payment_wrap">
-            <div class="container">
-                <!-- 결제 상품 및 결제 금액 -->
-                <div class="cont">
-                    <div class="cont_info">
-                        <div class="title">
-                            <h2>결제하기</h2>
-                        </div>
-                        <!-- 결제 상품 -->
-                        <div class="item_product">
-                            <div class="sub_title">
-                                <h3>결제 상품</h3>
-                            </div>
-                            <ul class="item_product_list">
-                                <li class="item">
-                                    <h4>그레이하운드 캐릭터 3D 이미지</h4>
-                                    <div class="detail">
-                                        <div class="is_img">
-                                            <img src="../../assets/images/item01.jpg" alt="그레이하운드 캐릭터 3D 이미지" />
-                                        </div>
-                                        <div class="is_text">
-                                            <div class="price"> 
-                                                <p class="price_final">25,000<small>원</small></p>
-                                                <p class="price_og">35000<span>원</span></p>
-                                            </div>
-                                            <div class="coupon">
-                                                <label for="coupon">적용쿠폰 선택</label>
-                                                <select name="coupon">
-                                                    <option value="" hidden>쿠폰을 선택해주세요</option>
-                                                    <option value="">WELCOME COPON 10,000원[50,000이상 사용가능]</option>
-                                                    <option value="">WELCOME COPON 30,000원[50,000이상 사용가능]</option>
-                                                    <option value="">WELCOME COPON 50,000원[50,000이상 사용가능]</option>
-                                                    <option value="">WELCOME COPON 60,000원[50,000이상 사용가능]</option>
-                                                </select>
-                                            </div>
-                                            <div class="point">
-                                                <label for="point">포인트 적용</label>
-                                                <div class="point_box">
-                                                    <input type="number" name="point" value="0" /><p>포인트</p>
-                                                    <button type="button" class="btn_use">모두 사용</button>
-                                                </div>
-                                            </div>
-                                            <p class="point_have">사용 가능한 포인트 : <span>30,000</span>P</p>
-                                        </div>
-                                    </div>
-                                    <div class="tag">
-                                        <span>#Autodesk FBX</span>
-                                        <span>#Autodesk FBX</span>
-                                        <span>#Autodesk FBX</span>
-                                        <span>#Autodesk FBX</span>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <h4>그레이하운드 캐릭터 3D 이미지</h4>
-                                    <div class="detail">
-                                        <div class="is_img">
-                                            <img src="../../assets/images/item01.jpg" alt="그레이하운드 캐릭터 3D 이미지" />
-                                        </div>
-                                        <div class="is_text">
-                                            <div class="price"> 
-                                                <p class="price_final">25,000<small>원</small></p>
-                                                <p class="price_og">35000<span>원</span></p>
-                                            </div>
-                                            <div class="coupon">
-                                                <label for="coupon">적용쿠폰 선택</label>
-                                                <select name="coupon">
-                                                    <option value="">쿠폰을 선택해주세요</option>
-                                                    <option value="">WELCOME COPON 10,000원[50,000이상 사용가능]</option>
-                                                    <option value="">WELCOME COPON 30,000원[50,000이상 사용가능]</option>
-                                                    <option value="">WELCOME COPON 50,000원[50,000이상 사용가능]</option>
-                                                    <option value="">WELCOME COPON 60,000원[50,000이상 사용가능]</option>
-                                                </select>
-                                            </div>
-                                            <div class="point">
-                                                <label for="point">포인트 적용</label>
-                                                <div class="point_box">
-                                                    <input type="number" name="point" value="0" /><p>포인트</p>
-                                                    <button type="button" class="btn_use">모두 사용</button>
-                                                </div>
-                                            </div>
-                                            <p class="point_have">사용 가능한 포인트 : <span>30,000</span>P</p>
-                                        </div>
-                                    </div>
-                                    <div class="tag">
-                                        <span>#Autodesk FBX</span>
-                                        <span>#Autodesk FBX</span>
-                                        <span>#Autodesk FBX</span>
-                                        <span>#Autodesk FBX</span>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <h4>그레이하운드 캐릭터 3D 이미지</h4>
-                                    <div class="detail">
-                                        <div class="is_img">
-                                            <img src="../../assets/images/item01.jpg" alt="그레이하운드 캐릭터 3D 이미지" />
-                                        </div>
-                                        <div class="is_text">
-                                            <div class="price"> 
-                                                <p class="price_final">25,000<small>원</small></p>
-                                                <p class="price_og">35000<span>원</span></p>
-                                            </div>
-                                            <div class="coupon">
-                                                <label for="coupon">적용쿠폰 선택</label>
-                                                <select name="coupon">
-                                                    <option value="">쿠폰을 선택해주세요</option>
-                                                    <option value="">WELCOME COPON 10,000원[50,000이상 사용가능]</option>
-                                                    <option value="">WELCOME COPON 30,000원[50,000이상 사용가능]</option>
-                                                    <option value="">WELCOME COPON 50,000원[50,000이상 사용가능]</option>
-                                                    <option value="">WELCOME COPON 60,000원[50,000이상 사용가능]</option>
-                                                </select>
-                                            </div>
-                                            <div class="point">
-                                                <label for="point">포인트 적용</label>
-                                                <div class="point_box">
-                                                    <input type="number" name="point" value="0" /><p>포인트</p>
-                                                    <button type="button" class="btn_use">모두 사용</button>
-                                                </div>
-                                            </div>
-                                            <p class="point_have">사용 가능한 포인트 : <span>30,000</span>P</p>
-                                        </div>
-                                    </div>
-                                    <div class="tag">
-                                        <span>#Autodesk FBX</span>
-                                        <span>#Autodesk FBX</span>
-                                        <span>#Autodesk FBX</span>
-                                        <span>#Autodesk FBX</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- 결제 상품 끝 -->
-
-                        <!-- 사용권 유형 -->
-                        <div class="item_license">
-                            <div class="sub_title">
-                                <h3>사용권 유형</h3>
-                            </div>
-                            <div class="accordion">
-                                <div class="accordion_list">
-                                    <a href="javascript:;" class="accordion_title">
-                                        <p>개인 사용권</p>
-                                        <span>개인용, 구매한 제작자만 사용 가능</span>
-                                        <div class="is_arw"></div>
-                                    </a>
-                                    <div class="accordion_toggle">
-                                        <p><img src="../../assets/images/payment/ico_people.png" alt="사람 아이콘" />제작자 이름 (ID 또는 SNS활동명)</p>
-                                        <div class="accordion_toggle_item">
-                                            <div class="input_box">
-                                                <input type="text" placeholder="제작자 이름을 입력해주세요">
-                                                <button type="button" class="btn_add">추가</button>
-                                            </div>
-                                            <ul class="caution">
-                                                <li>· 개인 사용권은 개인 전용 사용권으로 구매 시 등록한 제작자만 사용 가능.</li>
-                                                <li>· 동일 제작자일 경우 여러 작품에 사용가능.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion_list">
-                                    <a href="javascript:;" class="accordion_title">
-                                        <p>공동 사용권</p>
-                                        <span>팀/회사용, 상품당 1개의 프로젝트에만 사용 가능</span>
-                                        <div class="is_arw"></div>
-                                    </a>
-                                    <div class="accordion_toggle">
-                                        <p><img src="../../assets/images/payment/ico_building.png" alt="회사 아이콘" />팀/회사명</p>
-                                        <div class="input_box">
-                                            <input type="text" placeholder="팀/회사명을 입력해주세요">
-                                        </div>
-                                        <p><img src="../../assets/images/payment/ico_gallery.png" alt="작품 아이콘" />작품/프로젝트명 (ID 또는 SNS활동명)</p>
-                                        <!--  -->
-                                        <div class="accordion_toggle_item">
-                                            <div class="input_box">
-                                                <input type="text" placeholder="작품/프로젝트 명">
-                                                <button type="button" class="btn_add">추가</button>
-                                            </div>
-                                            <ul class="caution">
-                                                <li>· 개인 사용권은 개인 전용 사용권으로 구매 시 등록한 제작자만 사용 가능.</li>
-                                                <li>· 동일 제작자일 경우 여러 작품에 사용가능.</li>
-                                            </ul>
-                                            <div class="project_choice">
-                                                <img src="../../assets/images/payment/ico_line.png" alt="라인" />
-                                                <div class="select_box">
-                                                    <div class="select_title">
-                                                        <p>해당 프로젝트에 적용된 상품 총 <span>2</span>개</p>
-                                                        <img src="../../assets/images/payment/select_arw.png" alt="화살표" />
-                                                    </div>
-                                                    <ul class="select_list">
-                                                       <li>
-                                                            <input type="checkbox" id="select_item01">
-                                                            <label for="select_item01">그레이하운드 캐릭터 3D 이미지</label>
-                                                       </li> 
-                                                       <li>
-                                                            <input type="checkbox" id="select_item02">
-                                                            <label for="select_item02">옛날 골목가게 3층건물 3D 이미지</label>
-                                                       </li> 
-                                                       <li>
-                                                            <input type="checkbox" id="select_item03">
-                                                            <label for="select_item03">중세분위기 토이 클레이 3D 배경</label>
-                                                       </li> 
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--  -->
-                                        <!--  -->
-                                        <div class="accordion_toggle_item">
-                                            <div class="input_box">
-                                                <input type="text" placeholder="작품/프로젝트 명">
-                                                <button type="button" class="btn_delete">삭제</button>
-                                            </div>
-                                            <ul class="caution">
-                                                <li>· 개인 사용권은 개인 전용 사용권으로 구매 시 등록한 제작자만 사용 가능.</li>
-                                                <li>· 동일 제작자일 경우 여러 작품에 사용가능.</li>
-                                            </ul>
-                                            <div class="project_choice">
-                                                <img src="../../assets/images/payment/ico_line.png" alt="라인" />
-                                                <div class="select_box">
-                                                    <div class="select_title">
-                                                        <p>해당 프로젝트에 적용된 상품 총 <span>2</span>개</p>
-                                                        <img src="../../assets/images/payment/select_arw.png" alt="화살표" />
-                                                    </div>
-                                                    <ul class="select_list">
-                                                        <li>
-                                                            <input type="checkbox" id="select_item01">
-                                                            <label for="select_item01">그레이하운드 캐릭터 3D 이미지</label>
-                                                        </li> 
-                                                        <li>
-                                                            <input type="checkbox" id="select_item02">
-                                                            <label for="select_item02">옛날 골목가게 3층건물 3D 이미지</label>
-                                                        </li> 
-                                                        <li>
-                                                            <input type="checkbox" id="select_item03">
-                                                            <label for="select_item03">중세분위기 토이 클레이 3D 배경</label>
-                                                        </li> 
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--  -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 사용권 유형 끝 -->
-
-                        <!-- 결제 수단 -->
-                        <div class="item_pay_method">
-                            <div class="sub_title">
-                                <h3>사용권 유형</h3>
-                            </div>
-                            <ul class="pay_method_list list_choice_one">
-                                <li class="item"><button type="button">신용카드</button></li>
-                                <li class="item"><button type="button"><img src="../../assets/images/payment/ico_kakao.png" alt="카카오페이" /></button></li>
-                                <li class="item"><button type="button"><img src="../../assets/images/payment/ico_naver.png" alt="네이버페이" /></button></li>
-                                <li class="item"><button type="button"><img src="../../assets/images/payment/ico_payco.png" alt="페이코" /></button></li>
-                                <li class="item"><button type="button"><img src="../../assets/images/payment/ico_toss.png" alt="토스페이" /></button></li>
-                            </ul>
-                        </div>
-                        <!-- 결제 수단 끝 -->
-                    </div>
-                    <div class="cont_pay">
-                        <div class="item">
-                            <div class="sub_title">
-                                <h3>결제 금액</h3>
-                            </div>
-                            <ul class="pay_info">
-                                <li>
-                                    <p>상품금액</p>
-                                    <p>140,000<span>원</span></p>
-                                </li>
-                                <li>
-                                    <p>할인금액</p>
-                                    <p class="c-878787">140,000<span>원</span></p>
-                                </li>
-                                <li class="sm">
-                                    <p>- 자체 할인</p>
-                                    <p class="c-878787">-3,000<span>원</span></p>
-                                </li>
-                                <li class="sm">
-                                    <p>- 쿠폰</p>
-                                    <p class="c-878787">-3,000<span>원</span></p>
-                                </li>
-                                <li class="sm">
-                                    <p>- 포인트</p>
-                                    <p class="c-878787">-3,000<span>P</span></p>
-                                </li>
-                            </ul>
-                            <div class="pay_final">
-                                <p>최종 결제 금액</p>
-                                <span>77,000원</span>
-                            </div>
-                            <div class="pay_check">
-                                <input type="checkbox" id="payCheck" />
-                                <label for="payCheck">결제 정보를 확인하였으며, 이에 동의합니다.</label>
-                            </div>
-                            <button type="button" class="btn_pay">결제하기</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- 결제 상품 및 결제 금액 끝 -->
-            </div>
-        </section>
-        <!-- 결제하기 끝 -->
+        
     </main>
     
-    <!-- 푸터 -->
-    <footer class="footer">
-        <div class="ft_top">
-            <div class="ft_container">
-                <ul class="ft_nav">
-                    <li><a href="javascript:;">회사소개</a></li>
-                    <li><a href="javascript:;" class="privacy">개인정보처리방침</a></li>
-                    <li><a href="javascript:;">이용약관</a></li>
-                    <li><a href="javascript:;">입점문의</a></li>
-                    <li><a href="javascript:;">고객센터</a></li>
-                </ul>
-                <div class="select_box">
-                    <img src="../../assets/images/common/ico_globe.svg" alt="글로벌" />
-                    <div class="select_cont">
-                        <div class="select_title">
-                            <p>한국어</p>
-                            <img src="../../assets/images/common/ico_ft_arw.svg" alt="화살표" />
-                        </div>
-                        <ul class="select_list">
-                        <li><a href="javascript:;">English</a></li>
-                        <li><a href="javascript:;">Japanese</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ft_container">
-            <div class="ft_info">
-                <div class="logo">
-                    <img src="../../assets/images/common/logo.svg" alt="로고" />
-                </div>
-                <div class="is_text">
-                    <div class="item item01">
-                        <p>㈜유피웍스</p>
-                        <p>대표 우종범</p>
-                        <address>서울특별시 강남구 학동로 30길 34, 4층(논현동)</address>
-                    </div>
-                    <div class="item item02">
-                        <p>사업자등록번호 696-81-01610</p>
-                        <p><a href="javascript:;">사업자정보확인</a></p>
-                        <p>통신판매번호 1234-서울강남-5678</p>
-                    </div>
-                    <div class="item item03">
-                        <p>copyright ⓒ www.upfac.com all rights reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- 푸터 끝 -->
+    <footer class="footer"></footer>
 
     <!-- Jquery -->
-    <script src="../../assets/js/jquery.js"></script>
+    <script src="assets//js/jquery.js"></script>
     <!-- Swiper -->
-    <script src="../../assets/js/swiper-bundle.min.js"></script>
+    <script src="assets//js/swiper-bundle.min.js"></script>
     <!-- custom -->
-    <script src="../../assets/js/custom.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 </html>

@@ -14,28 +14,12 @@ $(document).ready(function(){
 
     //썸네일 3D
     //thumb preview
-    var $threeSixty = $('.threesixty');
+    var $threeSixty = $('.threesixty');    
 
     $threeSixty.threeSixty({
         dragDirection: 'horizontal',
         useKeys: true,
         draggable: true
-    });
-
-    $('.next').click(function () {
-        $threeSixty.nextFrame();
-    });
-
-    $('.prev').click(function () {
-        $threeSixty.prevFrame();
-    });
-
-    $threeSixty.on('down', function () {
-        $('.ui, h1, h2, .label, .examples').stop().animate({ opacity: 0 }, 300);
-    });
-
-    $threeSixty.on('up', function () {
-        $('.ui, h1, h2, .label, .examples').stop().animate({ opacity: 1 }, 500);
     });
     
 
@@ -124,7 +108,6 @@ $(document).ready(function(){
     // 외부영역 클릭 시 팝업 닫기
     $(document).mouseup(function (e){	
         var LayerPopup = $(".layer-popup");
-        console.log(LayerPopup.has(e.target).length)
         if(LayerPopup.has(e.target).length === 0){
             LayerPopup.removeClass("show");
         }

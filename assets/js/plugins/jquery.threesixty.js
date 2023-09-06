@@ -194,7 +194,8 @@ var scope,
         }
 
         // mouse down
-        $this.mousedown(function(e){
+        $this.mouseover(function(e){
+            console.log($this)
             e.preventDefault();
             thisTotal = $(this).data('count');
             $downElem = $(this);
@@ -212,7 +213,7 @@ var scope,
         }
 
         // mouse up
-        $(document, 'html', 'body').mouseup(that.onMouseUp);
+        $(document, 'html', 'body').mouseout(that.onMouseUp);
         $(document).blur(that.onMouseUp);
         $('body').mousemove(function(e){
             that.onMove(e.screenX, e.screenY);

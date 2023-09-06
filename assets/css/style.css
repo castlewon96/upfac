@@ -277,8 +277,7 @@ label {
 .item_detail > .section > .below_container .content_desc .detail {}
 .item_detail > .section > .below_container .content_desc .detail .tab_box .item_content h3 {display: flex; align-items: center; text-align:left; margin-bottom: 20px; font-size: 16px; font-weight:bold; } 
 .item_detail > .section > .below_container .content_desc .detail .tab_box .item_content h3 span {display:inline-block; margin-left:10px; font-size: 14px;color: #ababab;}
-.item_detail > .section > .below_container .content_desc .detail .tab_box .item_content .dec {padding-bottom: 30px; border-bottom: 1px solid #EFEFEF;}
-.item_detail > .section > .below_container .content_desc .detail .tab_box .item_content .view_tag {margin-top:20px;}
+.item_detail > .section > .below_container .content_desc .detail .tab_box .item_content .view_tag {margin-top:20px; border-bottom: 1px solid #EFEFEF; padding-bottom: 30px;}
 .item_detail > .section > .below_container .content_desc .detail .tab_box .item_content .view_tag li {display: inline-block;background-color:#EFF2F7; background-color: #EFF2F7; padding: 5px 7px; font-size: 13px;}
 .item_detail > .section > .below_container .content_desc .detail .tab_box .item_content .view_tag li + li  {margin-left:5px;}
 .item_detail > .section > .below_container .content_desc .detail .tab_box .item_content .law_responsable { margin: 20px 0; padding:20px; background-color: #ff505012; } 
@@ -291,6 +290,18 @@ label {
 .item_detail > .section > .below_container .content_desc .detail .tab_box .item_content .additional_content > ul li:
 .item_detail > .section > .below_container .content_desc .detail .tab_box .item_content .additional_content > ul li + li { margin-left:20px; } 
 .item_detail > .section > .below_container .content_desc .detail .tab_box .item_content .additional_content > ul > li .thumb_wrap { height: 100%; display: flex; flex-direction: column; border: 1px solid #DFDFDF; border-radius: 8px; overflow: hidden;} 
+
+
+/****하단 제품 상제 파일정보****/
+.item_detail > .section > .below_container .content_desc .detail .tab_box .item_content .dec_detail {display:flex;}
+.item_detail > .section > .below_container .content_desc .detail .tab_box .item_content .dec_detail .format {    flex-shrink: 0;
+    margin-right: 30px;
+    width: 300px;
+    display: flex;
+    padding: 20px;
+    border: 1px solid #DFDFDF;
+    border-radius: 8px;}
+.item_detail > .section > .below_container .content_desc .detail .tab_box .item_content .dec_detail .extension {flex:1;}
 
 .additional_content > ul > li .thumb_wrap .thumb_info { padding:10px; display: flex; align-items: center; } 
 .additional_content > ul > li .thumb_wrap .thumb_info .thumb_name { padding-left: 10px; color:#5157FF; font-weight:bold; font-size:14px;} 

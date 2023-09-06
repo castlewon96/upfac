@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
     <title>UPFAC-결제하기</title>
     <!-- 리셋 -->
     <link rel="stylesheet" href="../../assets/css/reset.css" />
@@ -75,6 +75,107 @@
     <!-- 헤더 끝 -->
 
     <main class="all_wrap">
+        <div class="d-flex">
+            <!-- 왼쪽 카테고리 영역 -->
+            <div class="left_category_area">
+                ㄴㅇㅁㅁㅇ
+            </div>
+            <!-- 물품 리스트 -->
+            <section class="product_area">
+                <div class="container_full">
+                    <div class="title"><h2>3D</h2></div>
+                    <ul class="cont" id="product_pop">
+                        <li class="item">
+                            <a href="javascript:;">
+                                <div class="is_img">
+                                    <img src="" alt="">
+                                </div>
+                            </a>
+                            <div class="is_text">
+                                <div class="is_text_top">
+                                    <a href="" class="user">
+                                        <div class="user_img">
+                                            <img src="../assets/images/test/user_img.svg" alt="프로필 사진" />
+                                        </div>
+                                        <h3 class="user_name">Umbra Marauder Rig</h3>
+                                    </a>
+                                    <div class="info">
+                                        <span class="info_view">1.1K</span>
+                                        <!-- [dev] 즐겨찾기 돼 있을경우 on 추가 -->
+                                        <button type="button" class="info_favorites on">123</button>
+                                    </div>
+                                </div>
+                                <p class="price">13,000<small>원</small></p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:;">
+                                <div class="is_img">
+                                    <img src="" alt="">
+                                </div>
+                            </a>
+                            <div class="is_text">
+                                <div class="is_text_top">
+                                    <a href="javascript:;" class="user">
+                                        <div class="user_img"></div>
+                                        <h3 class="user_name">유저이름</h3>
+                                    </a>
+                                    <div class="info">
+                                        <span class="info_view">1.1K</span>
+                                        <button type="button" class="info_favorites">123</button>
+                                    </div>
+                                </div>
+                                <p class="price">13,000<small>원</small></p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:;">
+                                <div class="is_img">
+                                    <img src="" alt="">
+                                </div>
+                            </a>
+                            <div class="is_text">
+                                <div class="is_text_top">
+                                    <a href="javascript:;" class="user">
+                                        <div class="user_img"></div>
+                                        <h3 class="user_name">유저이름</h3>
+                                    </a>
+                                    <div class="info">
+                                        <span class="info_view">1.1K</span>
+                                        <button type="button" class="info_favorites">123</button>
+                                    </div>
+                                </div>
+                                <p class="price">13,000<small>원</small></p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <a href="javascript:;">
+                                <div class="is_img">
+                                    <img src="" alt="">
+                                </div>
+                            </a>
+                            <div class="is_text">
+                                <div class="is_text_top">
+                                    <a href="javascript:;" class="user">
+                                        <div class="user_img"></div>
+                                        <h3 class="user_name">유저이름</h3>
+                                    </a>
+                                    <div class="info">
+                                        <span class="info_view">1.1K</span>
+                                        <button type="button" class="info_favorites">123</button>
+                                    </div>
+                                </div>
+                                <p class="price">13,000<small>원</small></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="more">
+                        <a href="javascript:;" class="btn_more">이런 유형 상품 더보기</a>
+                    </div>
+                </div>
+            </section>
+            <!-- 물품 리스트 끝 -->
+        </div>
     </main>
     
     <!-- 푸터 -->
@@ -96,8 +197,8 @@
                             <img src="../../assets/images/common/ico_ft_arw.svg" alt="화살표" />
                         </div>
                         <ul class="select_list">
-                        <li><a href="javascript:;">English</a></li>
-                        <li><a href="javascript:;">Japanese</a></li>
+                            <li><a href="javascript:;">English</a></li>
+                            <li><a href="javascript:;">Japanese</a></li>
                         </ul>
                     </div>
                 </div>
@@ -134,5 +235,13 @@
     <script src="../../assets/js/swiper-bundle.min.js"></script>
     <!-- custom -->
     <script src="../../assets/js/custom.js"></script>
+    
+    <script>
+        $(function(){
+            $('.info_favorites').on('click', function(){
+                $(this).toggleClass('on')
+            })
+        });
+    </script>
 </body>
 </html>
